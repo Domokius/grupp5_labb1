@@ -1,2 +1,3 @@
-document.querySelector("#myButton")   .addEventListener("click", function () {     alert("Hej från Grupp 5 dag 2!");
-  });
+const myButton = document.querySelector("#myButton");
+let clicks = 0;
+myButton.addEventListener("click", function(){ clicks++; alert(`Du har klickat på knappen ${clicks} gånger.`)})
