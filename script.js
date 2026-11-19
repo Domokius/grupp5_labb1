@@ -1,3 +1,4 @@
 const myButton = document.querySelector("#myButton");
 let clicks = 0;
-myButton.addEventListener("click", function(){ clicks++; alert(`Du har klickat på knappen ${clicks} gånger.`)})
+let numFollowingString = ":a"
+myButton.addEventListener("click", function(){ clicks++; if(clicks > 2) {numFollowingString = ":e";} alert(`Det var ${clicks}${numFollowingString} gången du klickade på knappen. Bra jobbat.`)})
